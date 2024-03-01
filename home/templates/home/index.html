@@ -1,3 +1,16 @@
-{% extends "base.html" %} {% block content %}
-<h1>Page loaded</h1>
+{% extends "base.html" %} {% load static%} {% block content %}
+<div class="container-fluid">
+  <div class="row">
+    <!-- Blog Entries Column -->
+    <div class="col-12 left main-bg">
+      <img
+        class="logo"
+        src="{% static 'images/brand_only.png'%}"
+        alt="Bladez and fadez logo"
+      />
+      <h1 class="title-text text-white">Bladez &amp; Fadez</h1>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
